@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    background-color: var(--primary-grey-color);
+    @include wadding (60px,60px);
+    align-items: baseline;
+}
+
+.contact {
+    display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.footer__contact{
+    margin-left: auto;
+    margin-right: auto;
+}
+address {
+    @include font (null, 14px, 1.71, 0.03em);
+    font-family: inherit;
+    font-style: normal;
+    color: var(--secondary-text-color);
+}
+
+.contact__item {
+    margin-bottom: 9px;
+}
+
+.contact__link {
+@include font (null, 14px, 1.71, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+}
+.contact__address {
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.footer__social {
+    margin-left: 70px;
+}

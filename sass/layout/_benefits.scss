@@ -1,0 +1,22 @@
+.benefits {
+@include wadding ();
+}
+
+.benefits__list {
+    @extend %list;
+}
+
+.benefits__card {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--button-grey-color);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.benefits__text {
+    @include font (null, 14px, 1.71, 0.03em);
+}

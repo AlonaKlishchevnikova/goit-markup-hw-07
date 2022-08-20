@@ -1,0 +1,49 @@
+.form-subscribe__input {
+    border: 1px solid hsl(0, 0%, 30%);
+    border-radius: 4px;
+    background-color: transparent;
+    width: 360px;
+    height: 50px;
+    padding: 15px;
+    color: var(--secondary-text-color);
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus {
+            border-color: var(--accent-color);
+        }
+}
+
+
+
+.hint {
+    position: absolute;
+    top: 15px;
+    left: -60px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .form input[type="email"]:not(:placeholder-shown)+&.is-hidden {
+            opacity: 1;
+            visibility: visible;
+        }
+}
+
+
+.send-icon {
+    margin-left: 10px;
+}
+
+.form-subscribe__label {
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    @include font (700, 14px, 1.14, 0.03em);
+}
+
+.form-subscribe {
+    margin-left: auto;
+}
+
+.form {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    position: relative;
+}
